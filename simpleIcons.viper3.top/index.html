@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Icons</title>
+    <link rel="icon" href="static/favicon.png">
+    <style>
+        /* 重置页面的默认边距和填充 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 防止整个页面出现滚动条 */
+        }
+        /* 设置 iframe 的样式 */
+        iframe {
+            width: 100%;
+            height: 100vh; /* 使用视口高度，确保 iframe 填满屏幕 */
+            border: none; /* 移除 iframe 边框 */
+            overflow: hidden; /* 隐藏 iframe 内部的滚动条 */
+        }
+        /* 隐藏 WebKit 浏览器的滚动条 */
+        iframe::-webkit-scrollbar {
+            display: none;
+        }
+        /* 隐藏 Firefox 的滚动条 */
+        iframe {
+            scrollbar-width: none; /* Firefox */
+        }
+    </style>
+</head>
+<body>
+<iframe src="https://simpleicons.org/zh-CN/" ></iframe>
+</body>
+</html>
